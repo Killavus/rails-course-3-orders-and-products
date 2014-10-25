@@ -2,6 +2,10 @@
 
 <ol>
   <% products.each do |product| %>
-  <li><%= product.name %> (<strong><%= present_product_price(product.price) %></strong>)</li>
+  <li>
+    <%= product.name %> (<strong><%= present_product_price(product.price) %></strong>)
+    <br />
+    <p><%= product.description %></p>
+  </li>
   <% end %>
 </ol>
