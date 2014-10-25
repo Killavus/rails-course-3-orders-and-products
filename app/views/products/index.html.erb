@@ -1,0 +1,7 @@
+<h1>Products:</h1>
+
+<ol>
+  <% products.each do |product| %>
+  <li><%= product.name %> (<strong><%= present_product_price(product.price) %></strong>)</li>
+  <% end %>
+</ol>

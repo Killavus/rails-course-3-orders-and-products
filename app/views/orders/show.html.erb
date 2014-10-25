@@ -1,0 +1,22 @@
+<h1>Order no. <%= order.id %></h1>
+
+<h2>Details:</h2>
+
+<ul>
+  <li><b>City:</b> <%= order.city %></li>
+  <li><b>Street:</b> <%= order.street %></li>
+  <li><b>Apartament:</b> <%= order.apartament %></li>
+</ul>
+
+<p><b>Notes:</b> <%= order.notes %></p>
+
+<h2>Products in Basket:</h2>
+
+<ol>
+  <% order.products.each do |product| %>
+  <li><%= product.name %> (<strong><%= present_product_price(product.price) %></strong>)</li>
+  <% end %>
+</ol>
+
+
+<p><%= link_to "Back to products", products_path %></p>
