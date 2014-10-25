@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  notes: MyText
+  city: MyString
+  street: MyString
+  apartament: MyString
+
+two:
+  notes: MyText
+  city: MyString
+  street: MyString
+  apartament: MyString
